@@ -48,13 +48,13 @@ env:
     - ES_HOST=127.0.0.1
     - SQLALCHEMY_DATABASE_URI="postgresql+psycopg2://postgres@localhost:5432/invenio"
   matrix:
-    - REQUIREMENTS=lowest EXTRAS=all,elasticsearch2 ES_URL=$ES2_DOWNLOAD_URL ELASTICSEARCH = "elasticsearch2"
-    - REQUIREMENTS=lowest EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL ELASTICSEARCH = "elasticsearch5"
-    - REQUIREMENTS=release EXTRAS=all,elasticsearch2 ES_URL=$ES2_DOWNLOAD_URL ELASTICSEARCH = "elasticsearch2" DEPLOY=true
-    - REQUIREMENTS=release EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL ELASTICSEARCH = "elasticsearch5"
-    - REQUIREMENTS=release EXTRAS=all,elasticsearch6 ES_URL=$ES6_DOWNLOAD_URL ELASTICSEARCH = "elasticsearch6"
-    - REQUIREMENTS=devel EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL ELASTICSEARCH = "elasticsearch5"
-    - REQUIREMENTS=devel EXTRAS=all,elasticsearch6 ES_URL=$ES6_DOWNLOAD_URL ELASTICSEARCH = "elasticsearch6"
+    - REQUIREMENTS=lowest EXTRAS=all,elasticsearch2 ES_URL=$ES2_DOWNLOAD_URL ELASTICSEARCH="elasticsearch2"
+    - REQUIREMENTS=lowest EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL ELASTICSEARCH="elasticsearch5"
+    - REQUIREMENTS=release EXTRAS=all,elasticsearch2 ES_URL=$ES2_DOWNLOAD_URL ELASTICSEARCH="elasticsearch2" DEPLOY=true
+    - REQUIREMENTS=release EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL ELASTICSEARCH="elasticsearch5"
+    - REQUIREMENTS=release EXTRAS=all,elasticsearch6 ES_URL=$ES6_DOWNLOAD_URL ELASTICSEARCH="elasticsearch6"
+    - REQUIREMENTS=devel EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL ELASTICSEARCH="elasticsearch5"
+    - REQUIREMENTS=devel EXTRAS=all,elasticsearch6 ES_URL=$ES6_DOWNLOAD_URL ELASTICSEARCH="elasticsearch6"
 
 jdk:
   - "oraclejdk8"

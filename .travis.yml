@@ -48,7 +48,7 @@ env:
     - ES_HOST=127.0.0.1
     - SQLALCHEMY_DATABASE_URI="postgresql+psycopg2://postgres@localhost:5432/invenio"
   matrix:
-    - REQUIREMENTS=lowest EXTRAS=all,elasticsearch2 ES_URL=$ES2_DOWNLOAD_URL ELASTICSEARCH="elasticsearch2"
+    - REQUIREMENTS=lowest EXTRAS=elasticsearch2 ES_URL=$ES2_DOWNLOAD_URL ELASTICSEARCH="elasticsearch2"
     - REQUIREMENTS=lowest EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL ELASTICSEARCH="elasticsearch5"
     - REQUIREMENTS=release EXTRAS=all,elasticsearch2 ES_URL=$ES2_DOWNLOAD_URL ELASTICSEARCH="elasticsearch2" DEPLOY=true
     - REQUIREMENTS=release EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL ELASTICSEARCH="elasticsearch5"

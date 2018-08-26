@@ -36,7 +36,6 @@ tests_require = [
     'coverage>=4.0',
     'invenio-access>=1.0.0a11',
     'invenio-accounts>=1.0.0b1',
-    'invenio-records-files>=1.0.0a08',
     'isort>=4.2.2',
     'psycopg2>=2.7.1',
     'pydocstyle>=1.0.0',
